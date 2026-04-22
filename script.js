@@ -53,9 +53,27 @@ console.log("I just used a function!");
 //DEFINE (create) your own function
 function skincare() {
     //STATEMENTS (actions) to exectue for this routine
-    console.log("1. cleanse");
-    console.log("2. Apply serums");
+    console.log("1.cleanse");
+    console.log("2.Apply serums");
     console.log("3.moisturize");
 }
 //CALL the function to use it!
 skincare();
+
+//4 types of FUNCTIONS:
+//input - yes or no? output - yes or no?
+
+//SANDWICH - need input, provide output
+// If you need input, list the (parameters)
+function makeSandwich(filling, sauce, bread){
+    //put the ingredients together
+    let sandwich;
+    sandwich = filling + " and " + sauce + " on " + bread;
+    //if you give output use the word RETURN
+    return sandwich;
+}
+
+//using a function with input 
+// means YOU need to provide arguments in parenthesis
+let mySandwich = makeSandwich("ham","mustard","brioche");
+console.log(mySandwich);
